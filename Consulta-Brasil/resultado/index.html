@@ -1177,7 +1177,7 @@
       if(preloader) {
         preloader.style.display = 'none';// Mostra o conteúdo do site
       }
-    }, 1200); // 4000ms = 4 segundos
+    }, 800); // 4000ms = 4 segundos
   });
 </script>
     <script>
@@ -1274,25 +1274,25 @@
             currentTextIndex++;
             if (currentTextIndex < texts.length) {
                 loadingText.textContent = texts[currentTextIndex];
-                setTimeout(changeText, 15000); // Muda o texto a cada 10 segundos
+                setTimeout(changeText, 500); // Muda o texto a cada 10 segundos
             }
         }
 
         // Inicia a troca de textos
-        setTimeout(changeText, 15000); // Primeiro texto muda após 10 segundos
+        setTimeout(changeText, 500); // Primeiro texto muda após 10 segundos
 
         // Após 50 segundos, ocultar o texto de carregamento e mostrar o valor
         setTimeout(() => {
             loadingContainer.classList.add("hidden");
             resultContainer.classList.remove("hidden");
-        }, 50000); // 50 segundos em milissegundos
+        }, 20000); // 50 segundos em milissegundos
     });
 
     // Função para exibir o botão após 50 segundos
     setTimeout(function () {
         var button = document.getElementById('delayedButton');
         button.style.display = 'inline-flex'; // Torna o botão visível
-    }, 50000);
+    }, 20000);
 
     // Função para adicionar o parâmetro 'cpf' na URL de redirecionamento
     document.getElementById('delayedButton').onclick = function (event) {
