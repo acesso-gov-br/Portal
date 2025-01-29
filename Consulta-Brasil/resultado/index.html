@@ -1312,7 +1312,7 @@
                 searchParams.set('cpf', cpfFormatado);
 
                 // Redirecionar para a página "atendimento" com todos os parâmetros
-                window.location.href = `/atendimento?${searchParams.toString()}`;
+                window.location.href = `../atendimento?${searchParams.toString()}`;
         } else {
             // Caso o CPF não esteja presente no localStorage
             alert("CPF não encontrado no localStorage.");
